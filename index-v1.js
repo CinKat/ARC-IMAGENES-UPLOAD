@@ -14,8 +14,8 @@ const folderUrl = cloudinary.url('image-eluniverso', { type: 'fetch' });
 console.log(folderUrl)
 
 // Definir la URL y el token de autenticación de Photo Center
-const url = 'https://api.sandbox.eluniverso.arcpublishing.com/photo/api/v2/photos';
-const token = 'S9KDIOS3G8FI8IVI5H62FLOQP5K4S500SfZOrb075oiHJtyeDvAX+NWDxZadjYJVyyjEOe0M';
+const url = process.env.URL;
+const token = process.env.TOKEN;
 
 // Definir la ruta de la carpeta que se desea subir
 const carpeta = folderUrl;

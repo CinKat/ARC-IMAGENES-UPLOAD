@@ -3,8 +3,8 @@ const fs = require('fs');
 const FormData = require('form-data');
 
 
-const token = 'S9KDIOS3G8FI8IVI5H62FLOQP5K4S500SfZOrb075oiHJtyeDvAX+NWDxZadjYJVyyjEOe0M';
-const url = 'https://api.sandbox.eluniverso.arcpublishing.com/photo/api/v2/photos';
+const url = process.env.URL;
+const token = process.env.TOKEN;
 
 // Ruta de la imagen que deseas cargar
 const imagePath = './imagen/El-Universo.jpg';
